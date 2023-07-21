@@ -151,6 +151,19 @@
 
     <div class="container">
       <div class="images">
+        <div class="btn-container">
+          <!-- Input element for adding images from smartphone gallery -->
+          <input
+            type="file"
+            accept="image/*"
+            id="imageInput"
+            onchange="addImage()"
+          />
+          <!-- Button for adding images from Windows folder -->
+          <button class="btn" onclick="addImageFromFolder()">
+            Add Image From Folder
+          </button>
+        </div>
         <div class="imageFlex1">
           <img src="img/1.jpg" />
           <img src="img/2.jpg" />
